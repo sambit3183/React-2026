@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React | 2026</title>
+    <script defer type="module" src="./main.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h1>
+            Testing React Library
+            <!-- <button onclick="getOutput()" >Get the output</button> -->
+             <button id="btn" >Get the output</button>
+        </h1>
+    </div>
+    
+</body>
+</html>
+
+
+
+<!-- why it doesn't work : Modules have their own scope -->
+
+<!-- They don't pollute the global window object . This is by design to prevent conflicts and keep code modular -->
+
+<!-- solution : window.getOutput = getOutput ; -->
